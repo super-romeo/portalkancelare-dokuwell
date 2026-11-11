@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Pro účetní kanceláře v Česku: klienti nahrávají doklady do portálu, kancelář vidí, co chybí, a lhůty i komunikace jsou u každého klienta.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Portál kanceláře</a></div>
-  <nav class="top"><a href="#co" data-ev="click_nav_co">Co dostanete</a><a href="price.html" data-ev="click_nav_cena">Cena</a><a href="#priklad" data-ev="click_nav_priklad">Příklad</a><a href="#start" data-ev="click_nav_start">Začít</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Portál kanceláře</a>
+  <nav><a href="#co" data-ev="click_nav_co">Co dostanete</a><a href="price.html" data-ev="click_nav_cena">Cena</a><a href="#priklad" data-ev="click_nav_priklad">Příklad</a><a href="#start" data-ev="click_nav_start">Začít</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Doklady od klientů na jednom místě — bez honění e-mailů na konci měsíce</h1>
-    <p class="sub">Pro účetní kanceláře a samostatné účetní: každý klient má svůj portál, kam nahrává faktury a účtenky, doklady se automaticky vytěží, kancelář vidí stav dodání u každého klienta a klientům chodí připomínky lhůt pro odevzdání dokladů.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">To potřebuji</a>
-    <p class="cta-note">Předběžný přístup · Na této stránce zatím nepřijímáme platby</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Pro účetní kanceláře</p>
+      <h1 class="rise" style="--i:1" data-len="long">Doklady od klientů na jednom místě&nbsp;<span class="soft">— bez honění e-mailů na konci měsíce</span></h1>
+      <p class="rise" style="--i:2">Pro účetní kanceláře a samostatné účetní: každý klient má svůj portál, kam nahrává faktury a účtenky, doklady se automaticky vytěží, kancelář vidí stav dodání u každého klienta a klientům chodí připomínky lhůt pro odevzdání dokladů.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">To potřebuji</a>
+      <p class="meta rise" style="--i:4">Předběžný přístup · Na této stránce zatím nepřijímáme platby</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="155" font-size="40" font-weight="600" fill="#0a1524">Doklady</text><line x1="120" y1="200" x2="1080" y2="200" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="250" width="44" height="44" rx="8" fill="#12397a" /><text x="190" y="282" font-size="32" fill="#0a1524">Sběr dokladů</text><rect x="120" y="370" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="190" y="402" font-size="32" fill="#0a1524">Vytěžení dokladů</text><rect x="120" y="490" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="190" y="522" font-size="32" fill="#0a1524">odevzdání</text><rect x="120" y="610" width="300" height="22" rx="11" fill="#dde2ea" /><rect x="680" y="250" width="390" height="420" rx="20" fill="#dfe8f7" /><text x="710" y="320" font-size="34" font-weight="600" fill="#0a1524">klientem</text><rect x="720" y="380" width="310" height="52" rx="26" fill="#12397a" /><rect x="720" y="460" width="310" height="52" rx="26" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="720" y="540" width="310" height="52" rx="26" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Pro</dt><dd>Účetní kanceláře</dd></div>
+      <div><dt>Doklady</dt><dd>Nahrává faktury a účtenky</dd></div>
+      <div><dt>Jak</dt><dd>Doklady se automaticky vytěží</dd></div>
+      <div><dt>Přístup</dt><dd>Předběžný přístup</dd></div>
+    </dl>
+  </section>
 
   <section id="co" data-view="features_view">
-    <h2>Co dostanete</h2>
-    <div class="grid">
-      <div class="card"><b>Sběr dokladů</b><span>Klient nahraje fakturu nebo účtenku fotkou či PDF, bez posílání e-mailem.</span><br><a class="btn" href="price.html" data-ev="feature_doklady">To potřebuji</a></div>
-      <div class="card"><b>Vytěžení dokladů</b><span>Údaje z faktur se přečtou samy a připraví k zaúčtování.</span><br><a class="btn" href="price.html" data-ev="feature_vytezeni">To potřebuji</a></div>
-      <div class="card"><b>Lhůty pro odevzdání</b><span>Připomínka klientovi, kdy má dodat doklady za měsíc nebo čtvrtletí.</span><br><a class="btn" href="price.html" data-ev="feature_lhuty">To potřebuji</a></div>
-      <div class="card"><b>Komunikace s klientem</b><span>Dotazy k dokladům u konkrétního dokladu, ne v rozházených e-mailech.</span><br><a class="btn" href="price.html" data-ev="feature_komunikace">To potřebuji</a></div>
+    <div class="stack"><h2>Co dostanete</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="32" font-weight="600" fill="#0a1524">Sběr dokladů</text><rect x="220" y="200" width="360" height="250" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><polygon points="400,250 360,320 440,320" fill="#12397a" /><rect x="385" y="310" width="30" height="70" fill="#12397a" /><polyline points="260,430 300,470 540,470 540,430" fill="none" stroke="#566174" stroke-width="6" /></svg></div>
+        <h3>Sběr dokladů</h3><p>Klient nahraje fakturu nebo účtenku fotkou či PDF, bez posílání e-mailem.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_doklady">To potřebuji</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="32" font-weight="600" fill="#0a1524">Vytěžení dokladů</text><rect x="150" y="210" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="210" y="216" width="340" height="24" rx="12" fill="#dde2ea" /><rect x="150" y="290" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="210" y="296" width="260" height="24" rx="12" fill="#dde2ea" /><rect x="150" y="370" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="210" y="376" width="300" height="24" rx="12" fill="#12397a" /><rect x="150" y="450" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="210" y="456" width="180" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Vytěžení dokladů</h3><p>Údaje z faktur se přečtou samy a připraví k zaúčtování.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_vytezeni">To potřebuji</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="32" font-weight="600" fill="#0a1524">Lhůty pro odevzdání</text><circle cx="400" cy="340" r="120" fill="#ffffff" stroke="#dde2ea" stroke-width="8" /><circle cx="400" cy="340" r="10" fill="#12397a" /><polyline points="400,340 400,250" fill="none" stroke="#12397a" stroke-width="6" /><polyline points="400,340 470,370" fill="none" stroke="#566174" stroke-width="6" /></svg></div>
+        <h3>Lhůty pro odevzdání</h3><p>Připomínka klientovi, kdy má dodat doklady za měsíc nebo čtvrtletí.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_lhuty">To potřebuji</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="145" font-size="32" font-weight="600" fill="#0a1524">Komunikace s klientem</text><rect x="140" y="230" width="250" height="110" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><polygon points="250,300 300,300 270,350" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="430" y="210" width="200" height="280" rx="28" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="450" y="240" width="160" height="150" rx="8" fill="#dfe8f7" /><rect x="470" y="420" width="120" height="28" rx="14" fill="#12397a" /></svg></div>
+        <h3>Komunikace s klientem</h3><p>Dotazy k dokladům u konkrétního dokladu, ne v rozházených e-mailech.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_komunikace">To potřebuji</a>
+      </article>
     </div>
   </section>
 
-  <section id="priklad" data-view="example_view">
-    <h2>Příklad (fiktivní údaje)</h2>
-    <p class="fine">Kancelář se dvěma účetními a 45 klienty. Pátého v měsíci přehled ukazuje, že 31 klientů dodalo doklady, 9 jen část a 5 zatím nic. Těm pěti odešla připomínka, a u tří chybějících faktur je dotaz přímo u dokladu.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Vyberte tarif</a>
+  <section id="priklad" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Příklad</h2>
+      <p>Kancelář se dvěma účetními a 45 klienty. Pátého v měsíci přehled ukazuje, že 31 klientů dodalo doklady, 9 jen část a 5 zatím nic. Těm pěti odešla připomínka, a u tří chybějících faktur je dotaz přímo u dokladu.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Vyberte tarif</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="178" y="230" font-size="32" font-weight="600" fill="#0a1524">doklady</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="512" y="230" font-size="32" font-weight="600" fill="#0a1524">připomínka</text><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="916" y="230" font-size="32" font-weight="600" fill="#0a1524">dotaz</text><rect x="120" y="310" width="960" height="410" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="390" font-size="36" font-weight="600" fill="#0a1524">dodalo doklady</text><rect x="170" y="460" width="420" height="28" rx="14" fill="#12397a" /><rect x="170" y="520" width="300" height="28" rx="14" fill="#dde2ea" /><rect x="170" y="580" width="360" height="28" rx="14" fill="#dde2ea" /><text x="170" y="660" font-size="32" fill="#566174">u dokladu</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Jak to funguje</h2>
-    <p>V Česku působí desítky tisíc účetních kanceláří a samostatných účetních. Většina z nich jsou malé kanceláře s jedním až několika lidmi, které vedou účetnictví a daňovou evidenci desítkám podnikatelů. Největší část práce nezabírá samotné účtování, ale shánění podkladů: faktury přicházejí e-mailem, v obálkách, přes chat i na flash disku a vždy až na poslední chvíli.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Jak to funguje</h2></div>
+    <div class="stack">
+      <p>V Česku působí desítky tisíc účetních kanceláří a samostatných účetních. Většina z nich jsou malé kanceláře s jedním až několika lidmi, které vedou účetnictví a daňovou evidenci desítkám podnikatelů. Největší část práce nezabírá samotné účtování, ale shánění podkladů: faktury přicházejí e-mailem, v obálkách, přes chat i na flash disku a vždy až na poslední chvíli.</p>
     <p>Na začátku každého měsíce se opakuje stejný obraz. Účetní obvolává klienty, hledá v poště přílohy, ručně přepisuje údaje z faktur a vede si tabulku, kdo co ještě nedodal. Dotazy k jednotlivým dokladům se ztrácejí v dlouhých e-mailových vláknech. Čím víc klientů, tím víc času padne na administrativu, za kterou si kancelář většinou nemůže nic účtovat.</p>
     <p>Klientský portál tuhle část práce soustředí na jedno místo. Každý klient dostane svůj přístup, kam nahraje doklady fotkou z telefonu nebo jako PDF. Doklady se roztřídí podle období a druhu a údaje z faktur se automaticky vytěží: dodavatel, IČO, datum, částka a DPH. Účetní je pak jen zkontroluje a převezme do svého účetního programu.</p>
     <p>Kancelář má přehled o všech klientech najednou: kdo dodal doklady za měsíc, kdo jen část a kdo zatím nic. Klientům, kteří nestihli lhůtu pro odevzdání dokladů, odchází připomínka sama, bez telefonování. Lhůty si kancelář nastaví podle sebe, třeba do pátého dne v měsíci u plátců DPH a čtvrtletně u ostatních.</p>
@@ -113,31 +147,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Portál běží v prohlížeči a na telefonu, nic se neinstaluje. Klient nepotřebuje žádný účetní program, stačí mu odkaz a heslo. Vytěžené údaje lze stáhnout v běžném formátu pro import do účetního softwaru, který kancelář už používá, takže není potřeba nic měnit na zavedeném postupu účtování.</p>
     <p>Začít jde během jednoho odpoledne: založíte klienty ze seznamu v tabulce, nastavíte lhůty pro odevzdání dokladů a klientům pošlete pozvánku do portálu. Doklady za další měsíc už pak přicházejí do portálu, ne do e-mailové schránky. Přístup pro další kolegy v kanceláři přidáte jedním krokem.</p>
     <p>Portál je určen pro malé a střední účetní kanceláře a samostatné účetní, kteří vedou účetnictví nebo daňovou evidenci pro více klientů. Služba je v přípravě: nejprve ověřujeme, zda ji kanceláře potřebují, a teprve potom ji postavíme.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Časté dotazy</h2>
-    <h3>Musí klient instalovat nějaký program?</h3>
-    <p>Ne. Klient nahrává doklady v prohlížeči nebo z telefonu přes odkaz kanceláře.</p>
-    <h3>Nahrazuje portál účetní program?</h3>
-    <p>Ne. Portál sbírá a vytěžuje doklady; účtujete dál ve svém programu.</p>
-    <h3>Jak se dostanou údaje do účetního programu?</h3>
-    <p>Vytěžené údaje stáhnete v běžném formátu pro import.</p>
-    <h3>Kolik klientů můžu mít?</h3>
-    <p>Podle tarifu; tarif se řídí počtem klientů kanceláře.</p>
-    <h3>Můžu ho už používat?</h3>
-    <p>Zatím ne. Služba je v přípravě a ověřujeme, zda ji kanceláře potřebují.</p>
+    <div class="stack"><h2>Časté dotazy</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Musí klient instalovat nějaký program?</h3><p>Ne. Klient nahrává doklady v prohlížeči nebo z telefonu přes odkaz kanceláře.</p></div>
+      <div class="split flip"><h3>Nahrazuje portál účetní program?</h3><p>Ne. Portál sbírá a vytěžuje doklady; účtujete dál ve svém programu.</p></div>
+      <div class="split flip"><h3>Jak se dostanou údaje do účetního programu?</h3><p>Vytěžené údaje stáhnete v běžném formátu pro import.</p></div>
+      <div class="split flip"><h3>Kolik klientů můžu mít?</h3><p>Podle tarifu; tarif se řídí počtem klientů kanceláře.</p></div>
+      <div class="split flip"><h3>Můžu ho už používat?</h3><p>Zatím ne. Služba je v přípravě a ověřujeme, zda ji kanceláře potřebují.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Založte svou kancelář</h2>
-    <p><label>Kolik klientů kancelář vede<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— vyberte —</option><option>Do 15</option><option>15–60</option><option>60–150</option><option>Více než 150</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Začít</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Založte svou kancelář</h2>
+    </div>
+    <div class="tile stack">
+      <label>Kolik klientů kancelář vede<select data-ev-focus="form_start"><option value="">— vyberte —</option><option>Do 15</option><option>15–60</option><option>60–150</option><option>Více než 150</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Začít</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Portál kanceláře</b></p>
   <p><a href="ochrana-udaju.html" data-ev="click_legal_privacy">Ochrana osobních údajů</a></p>
-  <p class="muted">Sběr dokladů a komunikace s klienty pro vaši kancelář. Nejde o daňové poradenství.</p>
+  <p>Sběr dokladů a komunikace s klienty pro vaši kancelář. Nejde o daňové poradenství.</p>
 </div></footer>
 
 </body>
